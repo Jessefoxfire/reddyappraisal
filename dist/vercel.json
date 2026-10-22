@@ -1,0 +1,139 @@
+{
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/insights/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/should-you-buy-a-house-in-2026",
+      "destination": "/insights/should-you-buy-a-house-in-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-house-hacking-worth-it-2026",
+      "destination": "/insights/is-house-hacking-worth-it-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/inherited-home-arizona-value",
+      "destination": "/insights/inherited-home-arizona-value/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/property-value-during-divorce",
+      "destination": "/insights/property-value-during-divorce/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/when-desktop-home-appraisal-makes-sense",
+      "destination": "/insights/when-desktop-home-appraisal-makes-sense/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zillow-home-value-vs-independent-appraisal",
+      "destination": "/insights/zillow-home-value-vs-independent-appraisal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/independent-appraisal-property-dispute",
+      "destination": "/insights/independent-appraisal-property-dispute/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-owner-real-estate-value",
+      "destination": "/insights/business-owner-real-estate-value/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tucson-investment-property-good-deal",
+      "destination": "/insights/tucson-investment-property-good-deal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/renovate-or-redevelop-tucson-property",
+      "destination": "/insights/renovate-or-redevelop-tucson-property/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/casita-adu-value-tucson",
+      "destination": "/insights/casita-adu-value-tucson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/renovations-that-increase-property-value",
+      "destination": "/insights/renovations-that-increase-property-value/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tucson-property-development-site-value",
+      "destination": "/insights/tucson-property-development-site-value/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tucson-property-tax-bill-too-high",
+      "destination": "/insights/tucson-property-tax-bill-too-high/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/assessed-value-vs-market-value-arizona",
+      "destination": "/insights/assessed-value-vs-market-value-arizona/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rental-property-taxes-tucson",
+      "destination": "/insights/rental-property-taxes-tucson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/appraisal-property-tax-appeal-pima-county",
+      "destination": "/insights/appraisal-property-tax-appeal-pima-county/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/purchase-price-below-assessed-value-appeal",
+      "destination": "/insights/purchase-price-below-assessed-value-appeal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/divorce-appraisal-vs-zillow-tucson",
+      "destination": "/insights/divorce-appraisal-vs-zillow-tucson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/inherited-house-before-you-sell",
+      "destination": "/insights/inherited-house-before-you-sell/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/appraise-house-without-interior-inspection",
+      "destination": "/insights/appraise-house-without-interior-inspection/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/backyard-casita-investment-value",
+      "destination": "/insights/backyard-casita-investment-value/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pool-home-value-tucson",
+      "destination": "/insights/pool-home-value-tucson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/solar-panels-home-value-arizona",
+      "destination": "/insights/solar-panels-home-value-arizona/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/insights/:slug",
+      "destination": "/api/article-page?slug=:slug"
+    },
+    {
+      "source": "/insights/:slug/",
+      "destination": "/api/article-page?slug=:slug"
+    }
+  ]
+}

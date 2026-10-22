@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Insights Admin | Reddy Appraisal LLC</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+  <script src="https://unpkg.com/mammoth@1.9.1/mammoth.browser.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+  <script src="/admin/admin.js" defer></script>
+</head>
+<body>
+  <header class="admin-header"><a class="brand" href="/"><span class="monogram">R</span><span>REDDY <small>APPRAISAL LLC</small></span></a><span class="admin-kicker">INSIGHTS MANAGEMENT</span></header>
+  <main class="admin-main">
+    <section id="login-view" class="panel login-panel">
+      <p class="eyebrow">CLIENT ADMIN</p><h1>Insights &amp; articles</h1>
+      <p class="intro">Sign in to publish a new article or edit a published one.</p>
+      <form id="login-form"><label for="admin-password">Admin password</label><input id="admin-password" name="password" type="password" autocomplete="current-password" required><button class="primary" type="submit">Sign in <span>↗</span></button><p class="form-message" id="login-message" role="status"></p></form>
+    </section>
+    <section id="app-view" hidden>
+      <div class="dashboard-heading"><div><p class="eyebrow">REDDY APPRAISAL JOURNAL</p><h1>Manage articles</h1><p class="intro">Publishing is immediate. You can return to any article and edit it later.</p></div><button id="logout" class="quiet-button" type="button">Sign out</button></div>
+      <div class="admin-layout">
+        <aside class="panel article-list-panel"><div class="panel-title"><h2>Published articles</h2><button id="new-article" class="small-primary" type="button">New article +</button></div><div id="article-list" class="article-list" aria-live="polite"></div></aside>
+        <section class="panel editor-panel" aria-labelledby="editor-title">
+          <div class="editor-top"><div><p class="eyebrow" id="editor-mode">NEW ARTICLE</p><h2 id="editor-title">Create an article</h2></div><a id="preview-link" class="preview-link" href="/insights/" target="_blank" rel="noopener">Open insights ↗</a></div>
+          <div class="upload-box"><div><strong>Start from a Word or PDF article</strong><p>We’ll import its text into the editor so you can review and format it before publishing.</p></div><label class="upload-button" for="article-file">Choose a .docx, .pdf, .md or .txt file</label><input id="article-file" type="file" accept=".docx,.pdf,.md,.txt,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown"></div>
+          <p id="editor-message" class="form-message" role="status"></p>
+          <form id="article-form">
+            <input type="hidden" id="original-slug">
+            <div class="form-grid">
+              <label class="wide">Article title<input id="title" name="title" maxlength="180" required></label>
+              <label>URL slug<input id="slug" name="slug" required><small>Used in the public article link.</small></label>
+              <label>Category<select id="category" name="category" required><option value="">Choose a topic</option><option>Buying a Home</option><option>Investment &amp; Business</option><option>Estate, Divorce &amp; Disputes</option><option>Appraisal Guides</option><option>Home Improvements</option><option>Land &amp; Redevelopment</option><option>Property Taxes</option></select></label>
+              <label class="wide">Short summary<input id="excerpt" name="excerpt" maxlength="260" required><small>Used on the insights list and as the article introduction.</small></label>
+              <label class="wide">SEO title<input id="seo-title" name="seo_title" maxlength="200"></label>
+              <label class="wide">Search description<textarea id="description" name="description" rows="2" maxlength="320"></textarea></label>
+              <label class="wide">The short answer<textarea id="answer" name="answer" rows="3" required></textarea></label>
+              <label>Article card style<select id="art" name="art"><option value="guide-art">Appraisal guide</option><option value="estate-art">Estate &amp; disputes</option><option value="improvement-art">Home improvements</option><option value="land-art">Land &amp; redevelopment</option><option value="tax-art">Property taxes</option><option value="rental-art">Investment &amp; business</option><option value="landscape-art">Southern Arizona</option></select></label>
+              <label>Publication date<input id="published" name="published" type="date" required></label>
+            </div>
+            <div class="sections-heading"><div><p class="eyebrow">ARTICLE BODY</p><h3>Sections</h3></div><button id="add-section" class="quiet-button" type="button">Add section +</button></div>
+            <div id="sections" class="sections-list"></div>
+            <label class="wide source-label">Sources <small>Optional. Add one source per line as “Source name | https://…”</small><textarea id="sources" rows="3" placeholder="Freddie Mac mortgage survey | https://example.com"></textarea></label>
+            <label class="wide source-label">Closing note<textarea id="editorial-note" rows="2" placeholder="Optional context or disclaimer shown at the end of the article."></textarea></label>
+            <label class="wide source-label">Call to action<textarea id="cta" rows="2"></textarea></label>
+            <div class="publish-row"><p>Clicking publish makes the article visible immediately. Existing links stay the same when editing.</p><button class="primary" type="submit" id="publish-button">Publish article <span>↗</span></button></div>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="admin-footer"><a href="/insights/">View the published journal ↗</a><span>Reddy Appraisal LLC · Tucson, Arizona</span></footer>
+</body>
+</html>

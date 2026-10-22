@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://reddy-appraisal-review.vercel.app/sitemap.xml
